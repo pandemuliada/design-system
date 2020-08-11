@@ -1,13 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import Sidebar from './components/Sidebar'
-
-const Button = styled.button`
-  color: white;
-  background-color: ${({ theme }) => theme.getColor('primary')};
-  border: none;
-  padding: 10px 15px;
-`
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
   return (
@@ -16,8 +10,13 @@ function App() {
         <Sidebar />
       </div>
       <div>
-        <div>Design System</div>
-        <Button>Primary Button</Button>
+        <Router>
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     </div>
   )

@@ -9,8 +9,12 @@ declare module 'styled-components' {
     colors?: {
       primary: string
       danger: string
+      [x: string]: string
     }
 
-    getColor: (color: IColor) => string | undefined
+    setSize: (size: number) => string | undefined
+    setMargin: (margin: number) => string | undefined
+    setPadding: (padding: number) => string | undefined
+    setColor: (color: IColor) => string | undefined
   }
 }
