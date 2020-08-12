@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../components/buttons'
 import Heading from '../components/Heading'
+import Text from '../components/Text'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       </Button>
       <Button size="normal">Normal Button</Button>
       <Button size="large">Large Button</Button>
+      <hr/>
       {/* Heading */}
       <Heading as="h1" size="6xl" uppercase>Heading Size 6XL</Heading>
       <Heading as="h2" size="5xl">Heading Size 5XL</Heading>
@@ -21,6 +23,10 @@ const Home = () => {
       <Heading as="h6" size="base">Heading Size Base</Heading>
       <Heading as="h6" size="sm">Heading Size SM</Heading>
       <Heading as="h6" size="xs">Heading Size XS</Heading>
+      <hr/>
+      {/* Text / Paragraph */}
+      <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae beatae ullam neque autem ipsam enim mollitia dolorum deleniti, quidem alias.</Text>
+      <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae beatae ullam neque autem ipsam enim mollitia dolorum deleniti, quidem alias.</Text>
     </div>
   )
 }
