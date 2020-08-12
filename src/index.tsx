@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import './reset.css'
+import './styles/reset.css'
 import * as serviceWorker from './serviceWorker'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
-import theme from './styled/theme'
+import theme from './styled'
 
 ReactDOM.render(
   <React.StrictMode>

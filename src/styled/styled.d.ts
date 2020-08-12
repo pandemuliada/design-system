@@ -1,5 +1,5 @@
 import 'styled-components'
-import { IColor } from './types/styled'
+import { IFontFamily, IColor, IFontSize } from '../types/theme'
 
 // and extend them!
 declare module 'styled-components' {
@@ -12,6 +12,8 @@ declare module 'styled-components' {
       [x: string]: string
     }
 
+    setFontFamily: (font: IFontFamily) => string | undefined
+    setFontSize: (font: IFontSize) => string | undefined
     setSize: (size: number) => string | undefined
     setMargin: (margin: number) => string | undefined
     setPadding: (padding: number) => string | undefined
